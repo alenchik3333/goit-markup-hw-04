@@ -134,10 +134,14 @@ a {
   display: flex;
   gap: 50px;
   margin-left: auto;
+
 }
 
 .contact .link {
+  display: flex;
+  gap: 10px;
   color: var(--primary-text-color);
+  justify-content: center;
 }
 
 .contact .link:hover,
@@ -531,4 +535,9 @@ h3 {
 .portfolio-item .portfolio-info {
   padding: 20px 24px;
   border: 1px solid var(--border-portfolio-color);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
