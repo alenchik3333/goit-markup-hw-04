@@ -142,6 +142,7 @@ a {
   gap: 10px;
   color: var(--primary-text-color);
   justify-content: center;
+  align-items: center;
 }
 
 .contact .link:hover,
@@ -152,13 +153,6 @@ a {
 
 .icon-email,
 .icon-call {
-  fill: var(--primary-text-color);
-}
-
-.icon-email:hover,
-.icon-email:focus,
-.icon-call:hover,
-.icon-call:focus {
   fill: currentColor;
 }
 
@@ -172,7 +166,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   text-align: center;
@@ -180,7 +173,7 @@ a {
 }
 
 .hero-text {
-  margin-bottom: 40px;;
+  margin-bottom: 30px;;
   color: var(--accent-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -198,9 +191,7 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
-  border: 1px solid transparent;
-  min-width: 152px;
-  min-height: 30px;
+  border: none;
   cursor: pointer;
 }
 
@@ -344,12 +335,15 @@ h3 {
   gap: 30px;
 }
 
+.client-link {
+  border: 1px solid var(--socials-icons-color);
+  border-radius: 4px;
+}
+
 .client-item {
   display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--socials-icons-color);
-  border-radius: 4px;
   align-items: center;
   justify-content: center;
 }
@@ -358,13 +352,13 @@ h3 {
   fill:var(--socials-icons-color);
 }
 
-.client-item:hover .client-icon,
-.client-item:focus  .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus  .client-icon {
   fill: var(--additional-text-color);
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--additional-text-color);
 }
 
@@ -442,6 +436,10 @@ h3 {
   background-color: var(--footer-socials-color);
   justify-content: center;
   align-items: center;
+}
+
+.join-link  {
+  display: flex;
 }
 
 .join-icon {
