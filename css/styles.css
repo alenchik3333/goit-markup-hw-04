@@ -336,14 +336,11 @@ h3 {
 }
 
 .client-link {
-  border: 1px solid var(--socials-icons-color);
-  border-radius: 4px;
-}
-
-.client-item {
   display: flex;
   width: 170px;
   height: 92px;
+  border: 1px solid var(--socials-icons-color);
+  border-radius: 4px;
   align-items: center;
   justify-content: center;
 }
