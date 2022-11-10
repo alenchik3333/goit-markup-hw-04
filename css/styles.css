@@ -425,26 +425,22 @@ h3 {
   gap: 10px;
 }
 
-.join-item {
+.join-link  {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--footer-socials-color);
   justify-content: center;
-  align-items: center;
-}
-
-.join-link  {
-  display: flex;
+  align-items: center; 
 }
 
 .join-icon {
   fill: var(--accent-text-color);
 }
 
-.join-item:hover,
-.join-item:focus {
+.join-link:hover,
+.join-link:focus {
   background-color: var(--additional-text-color);
 }
 
